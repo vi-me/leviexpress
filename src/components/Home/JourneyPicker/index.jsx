@@ -27,7 +27,7 @@ const DatesOptions = ({ dates }) => {
   );
 };
 
-const JourneyPicker = () => {
+const JourneyPicker = ({ onJourneyChange }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -35,7 +35,8 @@ const JourneyPicker = () => {
       `https://leviexpress-backend.herokuapp.com/api/journey?fromCity=${fromCity}&toCity=${toCity}&date=${date}`,
     )
       .then((resp) => resp.json())
-      .then((json) => console.log(json.data));
+      /*   .then((json) => console.log(json.data)); */
+      .then((json) => onJourneyChange(json.data));
   };
 
   const [fromCity, setFromCity] = useState('');

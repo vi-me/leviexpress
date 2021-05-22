@@ -192,17 +192,17 @@ header {
 }
 
 /* ---------- styly pro výběr sedadla  ---------- */
-
+/* 
 .seat-picker {
   padding: 2rem;
 }
 
 .seats {
   margin: 2rem 0;
-}
+} */
 
 /* ---------- styly pro sedadlo  ---------- */
-.seat {
+/* .seat {
   border: none;
   padding: 0;
   background-color: transparent;
@@ -228,7 +228,7 @@ header {
   font-family: 'Open Sans';
   font-size: 36px;
 }
-
+ */
 /* ---------- styly pro rezervaci  ---------- */
 
 .reservation {
