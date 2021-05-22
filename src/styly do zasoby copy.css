@@ -145,17 +145,17 @@ header {
 }
  */
 /* ---------- styly pro podrobnosti cesty  ---------- */
-
+/* 
 .stops {
   margin-top: 2rem;
 }
 
 .journey-detail {
   padding: 2rem;
-}
+} */
 
 /* ---------- styly pro zastávky  ---------- */
-
+/* 
 .bus-stop {
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@ header {
 
 .bus-stop__city {
   font-weight: bold;
-}
+} */
 
 /* ---------- styly pro výběr sedadla  ---------- */
 /* 
