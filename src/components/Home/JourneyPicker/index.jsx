@@ -28,16 +28,19 @@ const DatesOptions = ({ dates }) => {
 };
 
 const JourneyPicker = () => {
-  const handleSubmit = () => {
-    console.log('Odesílám formulář s cestou');
-    console.log(fromCity);
-    console.log(toCity);
-    console.log(date);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch(
+      `https://leviexpress-backend.herokuapp.com/api/journey?fromCity=${fromCity}&toCity=${toCity}&date=${date}`,
+    )
+      .then((resp) => resp.json())
+      .then((json) => console.log(json.data));
   };
 
-  const [fromCity, setFromCity] = useState([]);
-  const [toCity, setToCity] = useState([]);
-  const [date, setDate] = useState([]);
+  const [fromCity, setFromCity] = useState('');
+  const [toCity, setToCity] = useState('');
+  const [date, setDate] = useState('');
 
   const [cities, setCities] = useState([]);
 
@@ -95,7 +98,12 @@ const JourneyPicker = () => {
             </select>
           </label>
           <div className="journey-picker__controls">
-            <button className="btn" type="submit" onClick={handleSubmit}>
+            <button
+              className="btn"
+              type="submit"
+              onClick={handleSubmit}
+              disabled={!date || !fromCity || !toCity}
+            >
               Vyhledat spoj
             </button>
           </div>
