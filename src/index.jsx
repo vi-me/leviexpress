@@ -8,33 +8,19 @@ import Footer from './components/Footer';
 import './style.css';
 
 const App = () => (
-  <div className="container">
+  <Router>
     <Header />
 
-    <Router>
-      <div>
-        {/*      <ul>
-          <li className="btn button-1">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="btn button-2">
-            <Link to="/reservation">Reservation</Link>
-          </li>
-        </ul> */}
-
-        <Switch>
-          <Route path="/reservation">
-            <Reservation />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-
+    <Switch>
+      <Route path="/reservation">
+        <Reservation />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
     <Footer />
-  </div>
+  </Router>
 );
 
 render(<App />, document.querySelector('#app'));

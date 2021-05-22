@@ -9,3 +9,9 @@ footer {
   font-weight: bold;
   font-size: 150%;
 }
+
+.container {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
