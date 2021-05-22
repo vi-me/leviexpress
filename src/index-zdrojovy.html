@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LeviExpress</title>
+  </head>
+  <body>
+    <!--   <header>
+    <div class="container">
+      <h1 class="site-title">
+        <a href="/">LeviExpress</a>
+      </h1>
+    </div>
+  </header> -->
+
+    <div class="journey-picker container">
+      <h2 class="journey-picker__head">Kam chcete jet?</h2>
+      <div class="journey-picker__body">
+        <form class="journey-picker__form">
+          <label>
+            <div class="journey-picker__label">Odkud:</div>
+            <select>
+              <option value="">Vyberte</option>
+              <option value="Mesto1">Město 1</option>
+              <option value="Mesto2">Město 2</option>
+              <option value="Mesto3">Město 3</option>
+              <option value="Mesto4">Město 4</option>
+            </select>
+          </label>
+          <label>
+            <div class="journey-picker__label">Kam:</div>
+            <select>
+              <option value="">Vyberte</option>
+              <option value="Mesto1">Město 1</option>
+              <option value="Mesto2">Město 2</option>
+              <option value="Mesto3">Město 3</option>
+              <option value="Mesto4">Město 4</option>
+            </select>
+          </label>
+          <label>
+            <div class="journey-picker__label">Datum:</div>
+            <select>
+              <option value="">Vyberte</option>
+              <option>20.05.2021</option>
+              <option>21.05.2021</option>
+              <option>22.05.2021</option>
+              <option>23.05.2021</option>
+            </select>
+          </label>
+          <div class="journey-picker__controls">
+            <button class="btn" type="submit">Vyhledat spoj</button>
+          </div>
+        </form>
+        <img class="journey-picker__map" src="img/map.svg" />
+      </div>
+    </div>
+
+    <div class="journey-detail container">
+      <h2>Podrobnosti cesty</h2>
+      <div class="stops">
+        <div class="bus-stop">
+          <div class="bus-stop__bullet"></div>
+          <div class="bus-stop__place">
+            <div class="bus-stop__city">Město 1</div>
+            <div class="bus-stop__station">Zastávka</div>
+          </div>
+          <div class="bus-stop__departure">10:45</div>
+        </div>
+        <div class="bus-stop">
+          <div class="bus-stop__bullet"></div>
+          <div class="bus-stop__place">
+            <div class="bus-stop__city">Město 2</div>
+            <div class="bus-stop__station">Zastávka</div>
+          </div>
+          <div class="bus-stop__departure">10:45</div>
+        </div>
+        <div class="bus-stop">
+          <div class="bus-stop__bullet"></div>
+          <div class="bus-stop__place">
+            <div class="bus-stop__city">Město 3</div>
+            <div class="bus-stop__station">Zastávka</div>
+          </div>
+          <div class="bus-stop__departure">10:45</div>
+        </div>
+        <div class="bus-stop">
+          <div class="bus-stop__bullet"></div>
+          <div class="bus-stop__place">
+            <div class="bus-stop__city">Město 4</div>
+            <div class="bus-stop__station">Zastávka</div>
+          </div>
+          <div class="bus-stop__departure">10:45</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seat-picker container">
+      <h2>Vyberte sedadlo</h2>
+      <div class="seats">
+        <div className="seat-row">
+          <button class="seat" type="button">
+            <svg class="seat__in" viewBox="0 0 100 100">
+              <rect
+                fill="#69bffc"
+                width="75"
+                height="70"
+                x="20"
+                y="15"
+                ry="10"
+                rx="10"
+              ></rect>
+              <path
+                fill="#666"
+                d="m 22.888567,10.000319 a 3.2175668,3.2771011 0 0 0 -2.887349,1.753582 4.8263502,4.9156518 0 0 0 -1.24731,1.436783 c -2.816103,4.766542 -5.009942,9.611367 -6.654421,14.518286 a 8.0439172,8.192753 0 0 0 -4.5336774,5.011154 c -3.4210738,10.453104 -3.4210899,24.106617 0,34.559721 A 8.0439172,8.192753 0 0 0 12.580192,72.5246 c 1.56453,4.664487 3.581872,9.355123 6.054324,14.067091 a 4.8263502,4.9156518 0 0 0 1.354139,1.641598 3.2175668,3.2771011 0 0 0 2.899912,1.766377 H 70.96502 a 3.2175668,3.2771011 0 1 0 0,-6.553547 H 27.664166 A 4.8263502,4.9156518 0 0 0 27.145771,81.958136 C 24.934783,77.744451 23.135668,73.643323 21.722943,69.625425 a 8.0439172,8.192753 0 0 0 1.102791,-7.526339 c -1.386294,-4.235836 -1.386294,-19.959123 0,-24.195008 a 8.0439172,8.192753 0 0 0 -1.426397,-7.881525 c 1.430033,-3.917252 3.299542,-7.828917 5.623889,-11.76311 a 4.8263502,4.9156518 0 0 0 0.653503,-1.705577 H 70.96502 a 3.2175668,3.2771011 0 1 0 0,-6.553547 z"
+              ></path>
+              <text class="seat__number" x="35" y="62.484478">33</text>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button class="btn" type="button">Rezervovat</button>
+    </div>
+
+    <!--     <footer>
+      <div class="container">
+        <div class="footer-title">LeviExpress</div>
+        <div class="copyright">Czechitas Digitální akademie: Web, © 2021</div>
+      </div>
+    </footer> -->
+  </body>
+</html>
