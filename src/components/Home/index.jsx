@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.css';
+import JourneyPicker from './JourneyPicker';
 
 const Home = () => {
-  return <div className="hura">hoooome</div>;
+  return <JourneyPicker />;
 };
 
 export default Home;
